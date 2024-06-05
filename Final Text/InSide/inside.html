@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inside.css">
+</head>
+<body>
+    <div class="header">
+        <div class="headTitle"> <div class="music"><img  src="InSide_p/headMusic.png" alt=""></div> <a href="inside.html"><img src="InSide_p/headTitle.png" alt=""></a> </div>
+        <div class="headBody">
+                <div class="d1">首&nbsp页</div>
+                <div class="d2">新&nbsp闻</div>
+                <div class="d3">角&nbsp色</div>
+                <div class="d4">世&nbsp界</div>
+                <div class="d5">漫&nbsp画</div>
+                <div class="d6">社&nbsp区</div>
+                <div class="d7">赛&nbsp事</div>
+                <div class="d8">充值中心</div>
+        </div>
+        <div class="headCare">
+            <span>成长关爱系统</span><img style="cursor: pointer;" src="InSide_p/headHeart.png" style="vertical-align: middle;" alt="">
+            <span>登录</span><img style="cursor: pointer;" src="InSide_p/headPeople.png" alt="">
+        </div>
+    </div>
+    <div class="sevenPlay"><img src="InSide_p/sevenPlay.png" alt=""></div>
+    <div class="openVideo"><img src="InSide_p/openVideo.png" alt=""><div class="openBtu"></div></div>
+    
+    <div class="Loads">
+        <img style="width: 95px; height: 95px; cursor: pointer;" src="InSide_p/maLoad.png" alt="">
+        <img style="width: 95px; height: 95px; margin: 0 5px; cursor: pointer;" src="InSide_p/yunLoad.png" alt="">
+        <div class="Load1"><img src="InSide_p/psLoad.png" alt=""><img src="InSide_p/appLoad.png" alt=""></div>
+        <div class="Load2"><img src="InSide_p/tapLoad.png" alt=""><img src="InSide_p/androidLoad.png" alt=""></div>
+        <img style="cursor: pointer;" src="InSide_p/pcLoad.png" alt="">
+    </div>
+    <div class="yearName"><img style="height: 95px;width: 95px;" src="InSide_p/12+.png" alt=""></div>
+    <div class="age_limit" style="display: none;"><img src="InSide_p/ruleTitle.jpg" alt=""></div>
+    <div class="over" style="display: none;"><img src="InSide_p/over.png" alt=""></div>
+    <audio id="bgmusic" src="http://music.163.com/song/media/outer/url?id=2058919172.mp3" autoplay="autoplay" loop="loop" style="display: block; width: 3%; height:3%;"></audio>    
+</body>
+<script>
+    let yearDom = document.querySelector(".yearName")
+    let ageDom = document.querySelector(".age_limit")
+    let overDom = document.querySelector(".over")
+    yearDom.onclick = function(){
+        ageDom.style.display = 'block'
+        overDom.style.display = 'block'
+    }
+    overDom.onclick = function(){
+        ageDom.style.display = 'none'
+        overDom.style.display = 'none'
+    }
+    function Sound() {
+            var music = document.getElementById("bgmusic");//获取ID
+                console.log(music);
+                console.log(music.paused);
+            if (music.paused) { //判读是否播放
+                music.paused=false;
+                music.play(); //没有就播放
+            }
+
+        }
+setInterval("Sound()",1);
+
+</script>
+</html>

@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.body1{
+    position: relative;
+    background-image: url(OutSid_p/backgroun.jpeg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; 
+ }
+.title .img1{
+    position: absolute;
+    display: inline-block;
+    top: 5%;
+    left: 5%;
+}
+.title .img2{
+    position: absolute;
+    display: inline-block;
+    top: 8%;
+    left: 75%;
+}
+.downLoad{
+    position: absolute;
+    display: inline-block;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    top: 85%;
+    left: 28%;
+}
+.videoBtu{
+    position: absolute;
+    display: inline-block;
+    left: 37%;
+    top: 70%;
+}

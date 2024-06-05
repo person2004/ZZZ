@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(InSide_p/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height: 100vh;
+}
+.header{
+    position: fixed;
+    display: flex;
+    flex-shrink: 1;
+    width: 100%;
+    height: 66px;
+    justify-content: space-around;
+    background-color:rgb(17,17,17,0.75);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+.headTitle{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.music{
+    cursor: pointer;
+}
+.headBody{
+    display: inline-block;
+    margin: 0px 30px;
+}
+.d1,.d2,.d3,.d4,.d5,.d6,.d7,.d8{
+    cursor: pointer;
+    font-size: 17px;
+    height: 30px;
+    margin: 0px 30px;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    color: white;
+}
+.d1:hover{
+    background-color: rgb(149, 199, 243);
+}
+.d2:hover{
+    background-color: rgb(149, 199, 243);
+}
+.d3:hover{
+    background-color: rgb(149, 199, 243);
+}
+.d4:hover{
+    background-color: rgb(149, 199, 243);
+}
+.d5:hover{
+    background-color: rgb(149, 199, 243);
+}
+.d6:hover{
+    background-color: rgb(149, 199, 243);
+}
+.d7:hover{
+    background-color: rgb(149, 199, 243);
+}
+.d8:hover{
+    background-color: rgb(149, 199, 243);
+}
+.headCare{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+span{
+    cursor: pointer;
+    margin: 0px 30px;
+    color: white;
+}
+span:hover{
+    background-color: rgb(240, 245, 248,0.75);
+}
+.sevenPlay{
+    position: absolute;
+    top: 10%;
+    left: 90%;
+}
+.openVideo{
+    height: 10%;
+    width: 20%;
+    position: relative; 
+    top: 80%;
+    left: 42.5%;
+}
+.openBtu{
+    position: absolute;
+    bottom: 60%;
+    left: 33.5%;
+    height: 28px;
+    width: 28px;
+    background-image: url(InSide_p/openBtu.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;   
+}
+.openBtu:hover{
+    background-position: 0 -28px;
+}
+.Loads{
+    height: 125px;
+    width: 635px;
+    display: flex; 
+    justify-content: space-between; 
+    position: relative;
+    top: 78%;
+    left: 37%;
+    align-items: center;
+}
+.Load1,.Load2,.Load3{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    height: 95px;
+    width: 100%; 
+    margin:0 5px; 
+}
+.yearName{
+    width: 100%;
+    position: absolute;
+    left: 95%;
+    top: 90%;
+    cursor: pointer;
+}
+.age_limit{
+    position: relative;
+    left: 33%;
+}
+.over{
+    position: relative;
+    bottom: 49%;
+    left: 67.5%;
+}
